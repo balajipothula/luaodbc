@@ -11,6 +11,7 @@ package.cpath = package.cpath .. ";/home/ec2-user/.luarocks/lib/lua/5.1/odbc"
 
 https://github.com/nmap/nmap
 https://github.com/moteus/lua-odbc
+https://www.programering.com/q/MTM2YzMwATY.html
 
 
 curl -J -L http://www.lua.org/ftp/lua-5.3.4.tar.gz -o $HOME/lua.tar.gz && \
