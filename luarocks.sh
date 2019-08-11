@@ -1,5 +1,5 @@
 sudo yum -y update
-sudo yum -y install gcc make readline-devel unzip
+sudo yum -y install gcc make readline-devel unixODBC-devel unzip
 
 curl http://www.lua.org/ftp/lua-5.1.2.tar.gz -o $HOME/lua.tar.gz && \
 tar -xzf $HOME/lua.tar.gz                                        && \
@@ -17,3 +17,6 @@ cd       $HOME/luarocks                                                         
 ./configure                                                                             && \
 make build                                                                              && \
 sudo make install
+
+
+luarocks install odbc
