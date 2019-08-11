@@ -13,3 +13,6 @@ sqlcmd -S tcp:factset.cgkaelgeb32b.ap-south-1.rds.amazonaws.com,1433 -U admin -P
 
 select DB_NAME()
 GO
+
+
+https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017
