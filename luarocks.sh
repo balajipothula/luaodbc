@@ -18,5 +18,4 @@ cd       $HOME/luarocks                                                         
 make build                                                                              && \
 sudo make install
 
-
 luarocks install --local odbc
