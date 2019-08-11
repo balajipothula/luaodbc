@@ -11,3 +11,5 @@ https://www.progress.com/tutorials/odbc/connecting-to-hive-from-lua-using-an-odb
 https://github.com/moteus/lua-odbc
 
 https://travis-ci.org/moteus/lua-odbc/jobs/260547226
+
+https://realtimelogic.com/ba/doc/en/lua/luasql.html
