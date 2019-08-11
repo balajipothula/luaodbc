@@ -19,4 +19,4 @@ make build                                                                      
 sudo make install
 
 
-luarocks install odbc
+luarocks install --local odbc
