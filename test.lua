@@ -1,7 +1,7 @@
-package.path  = package.path  .. ";/home/ec2-user/.luarocks/share/lua/5.1/?.lua"
 package.cpath = package.cpath .. ";/home/ec2-user/.luarocks/lib/lua/5.1/?.so"
+package.path  = package.path  .. ";/home/ec2-user/.luarocks/share/lua/5.1/?.lua"
 
-local odbc = require "odbc"
+local odbc = require("odbc")
 
 CNN_DRV = {
         {Driver='{ODBC Driver 17 for SQL Server}'};
