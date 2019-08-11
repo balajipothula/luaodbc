@@ -7,3 +7,5 @@ https://openresty.org/en/using-luarocks.html
 https://github.com/torch/luajit-rocks
 
 https://www.progress.com/tutorials/odbc/connecting-to-hive-from-lua-using-an-odbc-driver
+
+https://github.com/moteus/lua-odbc
