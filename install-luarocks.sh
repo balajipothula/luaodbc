@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Author      : BALAJI POTHULA <balaji.pothula@techie.com>,
-# Date        : 31 August 2016,
+# Date        : 12 August 2019,
 # Description : Installing / Compiling Lua from Source Code.
 
 # update package repositories.
-sudo yum -y update
+yum -y update
 
 # installing build essentials.
-sudo yum -y install gcc git make readline-devel unixODBC-devel unzip
+yum -y install gcc git make readline-devel unixODBC-devel unzip
 
 # downloading, extracting and compiling luarocks.
 curl -J -L https://luarocks.org/releases/luarocks-3.1.3.tar.gz -o $HOME/luarocks.tar.gz && \
@@ -18,5 +18,5 @@ mv       $HOME/luarocks-* $HOME/luarocks                                        
 cd       $HOME/luarocks                                                                 && \
 ./configure                                                                             && \
 make build                                                                              && \
-sudo make install                                                                       && \
+make install                                                                            && \
 rm  -rf  $HOME/luarocks
