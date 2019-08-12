@@ -17,3 +17,5 @@ https://travis-ci.org/moteus/lua-odbc/jobs/260547226
 https://realtimelogic.com/ba/doc/en/lua/luasql.html
 
 http://www.unixodbc.org/odbcinst.html
+
+https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017
