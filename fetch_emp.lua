@@ -14,16 +14,19 @@ local odbc = require("odbc")
 local env, err = odbc.environment()
 
 --> microsoft sql server connection table.
-local con_table = {
+local contable = {
                     { Driver   = "ODBC Driver 17 for SQL Server" },
                     { Server   = "factset.cgkaelgeb32b.ap-south-1.rds.amazonaws.com,1433" },
                     { Uid      = "admin" },
                     { Pwd      = "admin123" },
                     { Database = "office_db" },
-                  }
+                 }
+
+--> microsoft sql server connection table.
+local contable = require("contable")
 
 --> getting microsoft sql server connection.
-local con, err = env:driverconnect(con_table)
+local con, err = env:driverconnect(contable)
 
 print(con)
 
