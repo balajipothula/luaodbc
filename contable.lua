@@ -1,0 +1,6 @@
+return { { Driver   = "ODBC Driver 17 for SQL Server" },
+         { Server   = "factset.cgkaelgeb32b.ap-south-1.rds.amazonaws.com,1433" },
+         { Uid      = "admin" },
+         { Pwd      = "admin123" },
+         { Database = "office_db" },
+}
