@@ -39,3 +39,12 @@ while emp do
   emp = emp_tab:fetch(emp, "a")
   i = i + 1
 end
+
+--> closing cursor.
+if nil ~= emp then emp:close() end
+
+--> closing connection.
+if not con then con:close() end
+
+--> closing environment.
+if not env then env:close() end
