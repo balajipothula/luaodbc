@@ -1,5 +1,5 @@
 sudo yum -y update
-sudo yum -y install gcc git make mssql-tools readline-devel unixODBC-devel unzip
+sudo yum -y install gcc git make readline-devel unixODBC-devel unzip
 
 sleep 5
 
