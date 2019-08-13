@@ -56,3 +56,10 @@ echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
 
 # updating environment path.
 source ~/.bashrc
+
+# installing lua odbc package.
+luarocks install --local odbc
+
+# installing lua cjson package.
+luarocks install --local cjson
+
