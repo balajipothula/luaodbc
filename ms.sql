@@ -1,5 +1,5 @@
 -- connecting to ms sql server instance.
-sqlcmd -S tcp:factset.cgkaelgeb32b.ap-south-1.rds.amazonaws.com,1433 -U admin -P admin123
+sqlcmd -S tcp:luaodbc.cgkaelgeb32b.ap-south-1.rds.amazonaws.com,1433 -U admin -P admin123
 
 -- seleting database.
 select DB_NAME()
