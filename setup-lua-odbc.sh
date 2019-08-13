@@ -4,7 +4,7 @@
 # Date        : 12 August 2019,
 # Description : Installing / Compiling Lua from Source Code.
 
-# update package repositories.
+# updating package repositories.
 yum -y update
 
 # installing build essentials.
