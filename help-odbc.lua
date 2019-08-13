@@ -1,5 +1,5 @@
-local flag = con:execute(  "CREATE TABLE emp_tab(no INT, name VARCHAR(10))"  )
-local flag = con:execute( [[CREATE TABLE emp_tab(no INT, name VARCHAR(10))]] )
+local flag = con:execute(  "CREATE TABLE IF NOT EXISTS emp_tab(no INT, name VARCHAR(10))"  )
+local flag = con:execute( [[CREATE TABLE IF NOT EXISTS emp_tab(no INT, name VARCHAR(10))]] )
 
 local emp_set = { { no = 104, name = "Ali" },
                   { no = 105, name = "Eve" }, }
@@ -11,8 +11,7 @@ end
 
 local emp  = con:execute( [[SELECT no, name FROM emp_tab]] )
 
-
-local flag = con:execute( [[DROP TABLE emp_tab]] )
+local flag = con:execute( [[DROP TABLE IF EXISTS emp_tab]] )
 
 emp:foreach(function(no, name)
   print(no, name)
