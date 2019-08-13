@@ -2,7 +2,10 @@
 
 # Author      : BALAJI POTHULA <balaji.pothula@techie.com>,
 # Date        : 12 August 2019,
-# Description : Installing / Compiling Lua from Source Code.
+# Description : Installing / Compiling Lua      from Source Code,
+#               Installing / Compiling LuaRocks from Source Code,
+#               Installing   unixODBC Devel Kit MS SQL Tools,
+#               Installing   Lua ODBC CJSON packages.
 
 # updating package repositories.
 yum -y update
@@ -57,7 +60,7 @@ echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
 # updating environment path.
 source ~/.bashrc
 
-# installing lua odbc package.
+# installing lua odbc  package.
 luarocks install --local odbc
 
 # installing lua cjson package.
