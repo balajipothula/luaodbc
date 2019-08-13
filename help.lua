@@ -1,7 +1,8 @@
 local flag = con:execute("CREATE TABLE emp_tab(no INT, name VARCHAR(10))")
 
-CREATE DATABASE office_db
+CREATE DATABASE IF NOT EXIST office_db
 USE office_db
+CREATE TABLE IF NOT EXIST emp_tab(no INT, name VARCHAR(10))
 
 INSERT INTO emp_tab(no, name) VALUES(1001, 'Ram')
 INSERT INTO emp_tab(no, name) VALUES(1002, 'Dev')
