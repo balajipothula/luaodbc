@@ -1,4 +1,4 @@
-# lua odbc setup on rhel machine.
+# lua odbc setup on rhel8 machine.
 
 step-00: sudo hostnamectl set-hostname lua-odbc  
 
