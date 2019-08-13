@@ -6,4 +6,4 @@ step-01: sudo ./install-lua.sh
 step-02: sudo ./install-luarocks.sh  
 step-03: sudo ./install-mssql-tools.sh  
 setp-04: luarocks install --local odbc  
-setp-05: lua list_odbc.lua  
+setp-05: lua list_odbc_drivers.lua  
