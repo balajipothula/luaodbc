@@ -10,9 +10,8 @@ for i, emp in pairs (emp_set) do
 end
 
 local emp  = con:execute( [[SELECT no, name FROM emp_tab]] )
-
-local flag = con:execute( [[DROP TABLE IF EXISTS emp_tab]] )
-
 emp:foreach(function(no, name)
   print(no, name)
 end)
+
+local flag = con:execute( [[DROP TABLE IF EXISTS emp_tab]] )
