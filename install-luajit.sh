@@ -16,5 +16,6 @@ tar -xzf $HOME/LuaJIT.tar.gz -C $HOME                                      && \
 rm  -rf  $HOME/LuaJIT.tar.gz                                               && \
 mv       $HOME/LuaJIT-* $HOME/LuaJIT                                       && \
 cd       $HOME/LuaJIT                                                      && \
-sudo make install                                                          && \
+sudo make install                                                          && \ : '
+make install PREFIX=$HOME/luajit                                           && \   '
 rm  -rf  $HOME/LuaJIT
