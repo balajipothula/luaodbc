@@ -14,7 +14,7 @@ sudo yum -y install gcc make
 curl http://luajit.org/download/LuaJIT-2.0.5.tar.gz -o $HOME/LuaJIT.tar.gz && \
 tar -xzf $HOME/LuaJIT.tar.gz -C $HOME                                      && \
 rm  -rf  $HOME/LuaJIT.tar.gz                                               && \
-mv       $HOME/LuaJIT-* $HOME/lua                                          && \
+mv       $HOME/LuaJIT-* $HOME/LuaJIT                                       && \
 cd       $HOME/LuaJIT                                                      && \
 sudo make install                                                          && \
 rm  -rf  $HOME/LuaJIT
