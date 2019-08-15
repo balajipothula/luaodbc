@@ -17,5 +17,6 @@ tar -xzf $HOME/LuaJIT.tar.gz -C $HOME                                      && \
 rm  -rf  $HOME/LuaJIT.tar.gz                                               && \
 mv       $HOME/LuaJIT-* $HOME/LuaJIT                                       && \
 cd       $HOME/LuaJIT                                                      && \
+make                                                                       && \
 make install CC="gcc -m32" TARGET_SYS=Linux PREFIX=$HOME/luajit            && \
 rm  -rf  $HOME/LuaJIT
