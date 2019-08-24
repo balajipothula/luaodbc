@@ -11,7 +11,7 @@ sudo yum -y update
 sudo yum -y install gcc git make readline-devel unixODBC-devel unzip
 
 # downloading, extracting and compiling lua.
-curl http://www.lua.org/ftp/lua-5.2.1.tar.gz -o $HOME/lua.tar.gz                    && \
+curl http://www.lua.org/ftp/lua-5.1.1.tar.gz -o $HOME/lua.tar.gz                    && \
 tar -xzf $HOME/lua.tar.gz -C $HOME                                                  && \
 rm  -rf  $HOME/lua.tar.gz                                                           && \
 mv       $HOME/lua-* $HOME/lua                                                      && \
@@ -19,5 +19,4 @@ cd       $HOME/lua                                                              
 sed -i 's/INSTALL_TOP\= \/usr\/local/INSTALL_TOP= ${HOME}\/lua/' $HOME/lua/Makefile && \
 make linux install                                                                  && \
 rm -rf   $HOME/lua/{doc,man,test,COPYRIGHT,HISTORY,INSTALL,README,Makefile}         && \
-export PATH=$PATH:$HOME/lua/bin                                                     && \
 echo "export PATH=$PATH:$HOME/lua/bin" >> $HOME/.bashrc
