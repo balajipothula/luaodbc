@@ -17,7 +17,7 @@ rm  -rf  $HOME/luarocks.tar.gz                                                  
 mv       $HOME/luarocks-* $HOME/luarocks                                                && \
 cd       $HOME/luarocks                                                                 && \
 ./configure --prefix="$HOME/luarocks"                                                      \
-            --lua-version="5.1"                                                            \
+            --lua-version="5.2"                                                            \
             --with-lua-bin="$HOME/lua/bin"                                                 \
             --with-lua-include="$HOME/lua/include"                                         \
             --with-lua-lib="$HOME/lua/lib"                                                 \
