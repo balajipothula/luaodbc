@@ -16,7 +16,12 @@ tar -xzf $HOME/luarocks.tar.gz -C $HOME                                         
 rm  -rf  $HOME/luarocks.tar.gz                                                          && \
 mv       $HOME/luarocks-* $HOME/luarocks                                                && \
 cd       $HOME/luarocks                                                                 && \
-./configure                                                                             && \
-make build                                                                              && \
-sudo make install                                                                       && \
-rm  -rf  $HOME/luarocks
+./configure --prefix="$HOME/luarocks"                                                      \
+            --lua-version="5.1"                                                            \
+            --with-lua-bin="$HOME/lua/bin"                                                 \
+            --with-lua-include="$HOME/lua/include"                                         \
+            --with-lua-lib="$HOME/lua/lib"                                                 \
+            --with-lua-interpreter="lua"                                                && \
+make build install bootstrap                                                            && \
+export PATH=$PATH:$HOME/luarocks/bin                                                    && \
+luarocks path >> $HOME/.bashrc
