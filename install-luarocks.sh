@@ -24,4 +24,5 @@ cd       $HOME/luarocks                                                         
             --with-lua-interpreter="lua"                                                && \
 make build install bootstrap                                                            && \
 export PATH=$PATH:$HOME/luarocks/bin                                                    && \
+echo "export PATH=$PATH:$HOME/luarocks/bin" >> $HOME/.bashrc                            && \
 luarocks path >> $HOME/.bashrc
