@@ -22,7 +22,8 @@ cd       $HOME/luarocks                                                         
             --with-lua-include="$HOME/lua/include"                                         \
             --with-lua-lib="$HOME/lua/lib"                                                 \
             --with-lua-interpreter="lua"                                                && \
-make build install bootstrap                                                            && \
-export PATH=$PATH:$HOME/luarocks/bin                                                    && \
+make build install                                                                      && \
 echo "export PATH=$PATH:$HOME/luarocks/bin" >> $HOME/.bashrc                            && \
-luarocks path >> $HOME/.bashrc
+exec $BASH                                                                              && \
+luarocks path >> $HOME/.bashrc                                                          && \
+exec $BASH
